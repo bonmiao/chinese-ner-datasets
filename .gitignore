@@ -127,3 +127,29 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+##########################
+.DS_Store
+.~*
+Untitled*.ipynb
+*-Copy*.ipynb
+~$*
+output.ipynb
+.idea/
+*.npz
+*.data
+*.dat
+*.csv
+*.zip
+.vscode/
+tools/repo_metrics/config.py
+*.jar
+*.item
+*.pkl
+nlp_*.yaml
+nohup.out
+temp/
+tmp/
+logs/
+score.py
