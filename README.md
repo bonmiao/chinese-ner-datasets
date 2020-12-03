@@ -1,5 +1,5 @@
 # chinese-ner-datasets
-本repo主要记录下中文命名实体识别任务（NER）里面的一些常见的数据集。
+本repo主要记录下中文命名实体识别任务（NER）里面的一些常见的数据集，公开的数据集给出了下载的链接，有些数据集是需要自己去搞定，这里就不做传播。
 
 ## 一、公开数据集
 常见的一些NLP任务里面的一些书籍及算法的表现都是能够在paperswithcode网站上面看见。下面的连接就是到了ner各种中文书籍集上面的sota表现。
@@ -17,10 +17,8 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 
 数据是BIO的格式，抽取PER、LOC、ORG
 
- <div align=center><img src="./.images/msra_rank.png" width="1000"></div>
- 
- **下载地址**：  
-[http://download.fastnlp.top/dataset/MSRA_NER.zip](http://download.fastnlp.top/dataset/MSRA_NER.zip)
+
+ **下载地址**：[http://download.fastnlp.top/dataset/MSRA_NER.zip](http://download.fastnlp.top/dataset/MSRA_NER.zip)
  
 ### 1.2 人民日报数据集
 
@@ -49,33 +47,24 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 
 数据比较少，用模型做出来的效果不是非常好。
 
- **下载地址**：   
- [https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson](https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson)
+ **下载地址**：[https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson](https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson)
 
 ### 1.4 WeiboNER
 
 对人名、地名、机构名等4种实体进行抽取。数据不是特别多。
 
- <div align=center><img src="./.images/weibo_rank.png" width="1000"></div>
-
- **下载地址**： 
- 
-[http://download.fastnlp.top/dataset/weibo_NER.zip](http://download.fastnlp.top/dataset/weibo_NER.zip)
+ **下载地址**：[http://download.fastnlp.top/dataset/weibo_NER.zip](http://download.fastnlp.top/dataset/weibo_NER.zip)
 
 ### 1.5 Resume NER
+ 数据的格式不是非常好。
  
- 
-  <div align=center><img src="./.images/resume_rank.png" width="1000"></div>
- 
- **下载地址**：  
- [https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER](https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER)
+ **下载地址**：[https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER](https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER)
 
 ### 1.6 SighanNER
 
 数据是BIO的格式，抽取PER、LOC、ORG
 
-**下载地址**：  
-[https://github.com/yzwww2019/Sighan-2006-NER-dataset](https://github.com/yzwww2019/Sighan-2006-NER-dataset)
+**下载地址**：[https://github.com/yzwww2019/Sighan-2006-NER-dataset](https://github.com/yzwww2019/Sighan-2006-NER-dataset)
 
 ### 1.7 OntoNotes
 
