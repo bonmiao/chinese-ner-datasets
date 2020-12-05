@@ -2,7 +2,7 @@
 本repo主要记录下中文命名实体识别任务（NER）里面的一些常见的数据集，公开的数据集给出了下载的链接，有些数据集是需要自己去搞定，这里就不做传播。
 
 ## 一、公开数据集
-常见的一些NLP任务里面的一些书籍及算法的表现都是能够在paperswithcode网站上面看见。下面的连接就是到了ner各种中文书籍集上面的sota表现。
+常见的一些NLP任务里面的一些数据集及算法的表现都是能够在paperswithcode网站上面看见。下面的连接就是到了ner各种中文数据集上面的sota表现。
 
 [https://www.paperswithcode.com/task/chinese-named-entity-recognition](https://www.paperswithcode.com/task/chinese-named-entity-recognition)
 
@@ -15,14 +15,14 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 |验证集|1.4 Mb|
 |测试集|1.1 Mb|
 
-数据是BIO的格式，抽取PER、LOC、ORG
+数据是BIO的格式，抽取PER、LOC、ORG，也就是我们常说的人民、地名和机构名。
 
 
  **下载地址**：[http://download.fastnlp.top/dataset/MSRA_NER.zip](http://download.fastnlp.top/dataset/MSRA_NER.zip)
  
 ### 1.2 人民日报数据集
 
-人民日报语料。
+人民日报语料数据集其实还是挺多的，这里应该是收集得比较全的。
 
 |语料时间|原始语料大小|下载链接|
 |:---:|:---:|:---:|
@@ -36,7 +36,7 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 京华/ntc 时报/n]/nz 讯/ng （/w 记者/nnt 李秋萌/nr ）/w 昨天/t ，/w 记者/nnt 从/p [朝阳区/ns 政府/nis]/nto 了解到/v ，/w 为/p 缓解/v 百姓/n 买菜/nz 难/a 、/w 买菜/nz 贵/a 问题/n ，/w 将/d 于/p 2014年/t 新增/v [50/m 个/q]/mq 左右/f 菜/n 站/vi ，/w 并/cc 在/p 每个/r 街道/ns 配/v 建/v [2/m 个/q]/mq 公益性/n 蔬菜/n 零售点/n 。/w
 ```
 
-可以根据所需要抽取的实体，来编写程序输入到模型里面去训练，得到你想要数据。
+这里需要去看看人民日报语料进行标注时候的词性。然后可以根据所需要抽取的实体，来编写程序输入到模型里面去训练，得到你想要的抽取实体。
 
 ### 1.3 BosonNLP数据集
 主要是2000条的新闻数据，可以抽取人名、地名、组织名、公司名、产品名、时间：
@@ -44,31 +44,43 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 |抽取字段|人名|地名|组织名|公司名|产品名|时间|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |标签|person_name|location|org_name|company_name|product_name|time|
+|实体数量|5144|4599|2692|2379|4130|4255|
 
-数据比较少，用模型做出来的效果不是非常好。
+
+数据比较少，用模型做出来的效果不是非常好，好像80%左右的效果吧。
 
  **下载地址**：[https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson](https://github.com/quincyliang/nlp-public-dataset/tree/master/ner-data/boson)
 
 ### 1.4 WeiboNER
 
-对人名、地名、机构名等4种实体进行抽取。数据不是特别多。
+对人名、地名、机构名等4种实体进行抽取。数据不是特别多，采用的标注当时就是BIO的方式。
+
+|抽取字段|人名|地名|组织名|城市名|
+|:---:|:---:|:---:|:---:|:---:
+|标签|PER.NOM|LOC.NAM|ORG.NAM|GPE.NAM|
 
  **下载地址**：[http://download.fastnlp.top/dataset/weibo_NER.zip](http://download.fastnlp.top/dataset/weibo_NER.zip)
 
 ### 1.5 Resume NER
- 数据的格式不是非常好。
+ 数据的格式不是非常好，要是你们有这个更好的数据集，可以提个pr给我。
  
  **下载地址**：[https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER](https://github.com/YiDai-03/Chinese_NLP_Dataset/tree/master/Resume-NER)
 
 ### 1.6 SighanNER
 
-数据是BIO的格式，抽取PER、LOC、ORG
+也是新闻类型的的数据，里面进行了标注人名、地名、机构名。具体的实体数量如下。
+
+|抽取字段|人名|地名|组织名|
+|:---:|:---:|:---:|:---:|
+|标签|PER|LOC|ORG|
+|个数|19588|39394|21902|
+
 
 **下载地址**：[https://github.com/yzwww2019/Sighan-2006-NER-dataset](https://github.com/yzwww2019/Sighan-2006-NER-dataset)
 
 ### 1.7 OntoNotes
 
-该数据需要自行去申请。具体的操作可以去网上搜索一下如何获取OntoNotes的数据集。
+该数据需要自行去申请。具体的操作可以去网上搜索一下如何获取OntoNotes的数据集，基本上在校生都是能够申请到这个数据集的。
 
 ## 二、竞赛数据集
 
@@ -106,3 +118,6 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 
 **竞赛任务**:    
 脱敏之后的简历数据，需要抽取18个字段的实体。
+
+
+to be continued ...
