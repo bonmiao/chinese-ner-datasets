@@ -65,7 +65,7 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 |ORG|ORG.NAM|特定机构名称（通惠医院）|
 ||ORG.NOM|泛指名称、统称（文艺公司）|
 
-数据量不到，看训练集、验证集和测试集的话，就是1890条句子，具体情况看下表：
+数据量不多，看训练集、验证集和测试集的话，就是1890条句子，具体的实体数量情况看下表：
 
 |数据集名称|句数|字符数|PER.NAM数|PER.NOM数|LOC.NAM数|LOC.NOM数|GPE.NAM数|ORG.NAM数|ORG.NOM数|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -94,7 +94,7 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 
 ### 1.7 OntoNotes
 
-该数据需要自行去申请。具体的操作可以去网上搜索一下如何获取OntoNotes的数据集，基本上在校生都是能够申请到这个数据集的。
+该数据需要自行去申请。具体的操作可以去网上搜索一下如何获取OntoNotes的数据集，基本上在校生都是能够申请到这个数据集的，具体的版本还是去他们的具体网站弄吧。
 
 ## 二、竞赛数据集
 
@@ -133,5 +133,9 @@ MSRA是微软的公开数据集。该数据集的具体信息为：
 **竞赛任务**:    
 脱敏之后的简历数据，需要抽取18个字段的实体。
 
+## 三、可以关注的repo
 
-to be continued ...
+[CLUEDatasetSearch](https://github.com/CLUEbenchmark/CLUEDatasetSearch)  
+[nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)
+
+To be continued
